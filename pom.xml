@@ -12,6 +12,7 @@
 	<artifactId>vms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>vms</name>
+	<packaging>war</packaging>
 	<description>Online Voting Management System</description>
 	<properties>
 		<java.version>11</java.version>
@@ -21,6 +22,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+  </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
@@ -33,15 +39,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
-		<dependency>
 
-<groupId>org.apache.maven</groupId>
-
-<artifactId>maven-project</artifactId>
-
-<version>2.2.1</version>
-
-</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
